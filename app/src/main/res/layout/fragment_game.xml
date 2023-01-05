@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/volcano_back"
+    tools:context=".GameFragment">
+
+
+    <ImageView
+        android:id="@+id/fireball"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="303dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="271dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/fireball" />
+
+    <ImageView
+        android:id="@+id/dino"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="431dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="17dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dino_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/dino" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

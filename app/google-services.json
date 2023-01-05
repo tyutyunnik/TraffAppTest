@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13289669304",
+    "project_id": "appgametestdice",
+    "storage_bucket": "appgametestdice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13289669304:android:52876d1298be3384b06a4d",
+        "android_client_info": {
+          "package_name": "com.fhww.sprt.saad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13289669304-ia2eviji17pctkrsmm289jrut63qt9g7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fhww.sprt.saad",
+            "certificate_hash": "3dfb79ffbf6ade281528e9921e3e91843d660a1c"
+          }
+        },
+        {
+          "client_id": "13289669304-dn3s63ujd1ighrpp20b6oos704cbnns3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAotDvhuqiOrLMsDIUdOJS2_ypKpvRXnDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13289669304-dn3s63ujd1ighrpp20b6oos704cbnns3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
