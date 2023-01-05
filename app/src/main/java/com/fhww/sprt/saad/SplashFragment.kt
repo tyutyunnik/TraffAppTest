@@ -86,7 +86,10 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     private fun onlineInit() {
         lifecycleScope.launch(Dispatchers.IO) {
             shaPr.edit().putBoolean("firstOne", false).apply()
-            initAppsFlyer(requireContext())
+//            initAppsFlyer(requireContext())
+            val lnk = "fex.net"
+            shaPr.edit().putString("lnk", lnk).apply()
+            startRun()
         }
     }
 
@@ -100,7 +103,8 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
                     if (nmg.isEmpty()) nmg = jsonObject.optString("c")
 
                     val appsFlyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(context)
-                    lnk = "https//fex.net"
+                    lnk = "https//"
+//                    lnk = "https//fex.net"
                     shaPr.edit().putString("appsF", appsFlyerId).apply()
                     shaPr.edit().putString("lnk", lnk).apply()
                     startRun()
@@ -127,6 +131,8 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     }
 
     private fun startRun() {
-        findNavController().navigate(R.id.action_splashFragment_to_runFragment)
+        lifecycleScope.launch(Dispatchers.Main) {
+            findNavController().navigate(R.id.action_splashFragment_to_runFragment)
+        }
     }
 }
