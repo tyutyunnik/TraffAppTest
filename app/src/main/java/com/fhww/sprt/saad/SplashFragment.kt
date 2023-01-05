@@ -39,7 +39,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         if (firstOne) {
             if (isDinoOnline(requireContext())) {
-                if (/*isBot(requireContext())*/false) {
+                if (isBot(requireContext())) {
                     shaPr.edit().putBoolean("firstOne", false).apply()
                     startDinoGame()
                 } else {
@@ -103,8 +103,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
                     if (nmg.isEmpty()) nmg = jsonObject.optString("c")
 
                     val appsFlyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(context)
-                    lnk = "https//"
-//                    lnk = "https//fex.net"
+                    lnk = "https//fex.net"
                     shaPr.edit().putString("appsF", appsFlyerId).apply()
                     shaPr.edit().putString("lnk", lnk).apply()
                     startRun()
